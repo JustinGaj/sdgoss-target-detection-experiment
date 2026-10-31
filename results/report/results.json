@@ -1,0 +1,90 @@
+{
+  "seed": 423,
+  "test_scope": "Synthetic 128x128 RGB images; not field performance",
+  "thresholds": {
+    "hue_deg": [
+      10,
+      45
+    ],
+    "saturation_min": 0.55,
+    "value_min": 0.3,
+    "area_px": [
+      6,
+      1000
+    ],
+    "aspect": [
+      0.5,
+      2
+    ],
+    "fill_min": 0.45
+  },
+  "tests": [
+    {
+      "condition": "9 px clear",
+      "frames": 100,
+      "positive_frames": 100,
+      "rate_percent": 100,
+      "rate_type": "recall"
+    },
+    {
+      "condition": "4.75 px clear",
+      "frames": 100,
+      "positive_frames": 100,
+      "rate_percent": 100,
+      "rate_type": "recall"
+    },
+    {
+      "condition": "4.75 px blurred",
+      "frames": 100,
+      "positive_frames": 100,
+      "rate_percent": 100,
+      "rate_type": "recall"
+    },
+    {
+      "condition": "4.75 px dim",
+      "frames": 100,
+      "positive_frames": 0,
+      "rate_percent": 0,
+      "rate_type": "recall"
+    },
+    {
+      "condition": "4.75 px oblique",
+      "frames": 100,
+      "positive_frames": 57,
+      "rate_percent": 57,
+      "rate_type": "recall"
+    },
+    {
+      "condition": "Empty background",
+      "frames": 100,
+      "positive_frames": 0,
+      "rate_percent": 0,
+      "rate_type": "false_positive_frame_rate"
+    },
+    {
+      "condition": "Same-color circular distractor",
+      "frames": 100,
+      "positive_frames": 100,
+      "rate_percent": 100,
+      "rate_type": "false_positive_frame_rate"
+    }
+  ],
+  "geometry": {
+    "fx_px": 45829.921350139724,
+    "target_px_at_2414m": 4.746263602955647,
+    "continuous_disk_area_px": 17.692678712258502,
+    "projected_area_ratio_limit": 0.33912332313155363
+  },
+  "cpu_benchmark": {
+    "host_arch": "AMD64",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "frame": "1920x1080 RGB, sparse candidate mask",
+    "warmup": 3,
+    "samples": 30,
+    "p50_ms": 339.76805000565946,
+    "p95_ms": 390.0514299748465,
+    "max_ms": 401.8163000000641
+  },
+  "warning": "CPU measurements do not establish Jetson or GPU performance."
+}

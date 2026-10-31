@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "comparison": "All seven detection counts and geometry match the report archive",
+  "total_frames": 700,
+  "long_range_recall_percent": 64.25,
+  "negative_frame_false_positive_percent": 50.0,
+  "timing_comparison": "Excluded from equality check; independently measured each run",
+  "measured_cpu_benchmark": {
+    "host_arch": "AMD64",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "frame": "1920x1080 RGB, sparse candidate mask",
+    "warmup": 3,
+    "samples": 30,
+    "p50_ms": 1096.5173000004143,
+    "p95_ms": 1377.2246450098462,
+    "max_ms": 1447.7692999644205
+  },
+  "detector_script_sha256": "5555e2f3f209f54ff566c99c2d6c18384316d98a8d3ab368a001dac5d7f51461",
+  "actual_results_sha256": "0e0a22258f5f6be9950bdba6d5e2d036ab8eef0def3d0739983aa9b6954eb718",
+  "verification_environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14"
+  }
+}
